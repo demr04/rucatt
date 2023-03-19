@@ -1,0 +1,209 @@
+/* icono del carro de compras */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" );
+/* fuente Poppins y Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    color: #f0e0ec;
+}
+
+header{
+    background: url(../medios/Header-ru.catt-4.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    overflow:hidden;   
+    border: 1px solid rgb(223, 35, 160);
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+}
+nav img{
+    height: 90%;
+    border-radius: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+nav #home{
+    color: yellow;
+}
+
+nav #productos{
+    color: #78e3eb;
+}
+
+nav #disenos{
+    color: #a2e20c;
+}
+
+nav #historia{
+    color: #fcacd1;
+}
+
+nav #contacto{
+    color: #ee3189;
+}
+
+nav .buy-car{
+    width: 50px;
+    height: 50px;
+    background: url(../medios/carrito-icon-blanco.png);
+    background-size: contain;
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    margin-top: 100px;
+    justify-content: right;
+    background-color: black;
+    align-items: center;
+}
+
+
+footer h2{
+    font-size: 15px;
+    color: yellow;
+}
+
+footer a{
+    width: 29px;
+    height: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../medios/instagram-icon.png);
+    background-size: contain;
+}
+
+.container{
+    border: 1px solid #1fd7e4;
+    background-color: #0f0214;
+}
+/* css index ---------------------------------------------------------------------------------------------------------*/
+.index {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 70%;
+    font-family: 'Inter', serif;
+}
+
+.index h1{
+    margin: 20px 0 20px  0;
+    padding: 10px 0 10px 0;
+    font-size: 50px;
+    color: #E2FF03;
+    background-color: #FF03EE;
+    border-radius: 40px;
+}
+
+.index .presen{
+    padding: 40px 0 40px 0;
+}
+.index p{
+    padding: 0 20px 20px 20px;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.index .NTD{
+    font-style: italic;
+    font-size: 45px;
+}
+
+.index p a{
+    text-decoration: underline;
+    color: black;
+    
+}
+.index .ru-icono{
+    border-radius: 20px;
+}
+
+section{
+    border:10px #a01ad0 solid;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section h4{
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+section .panel-product img{
+    padding: 10px;
+    border-radius: 40px;
+}
+
+
+/* css product ----------------------------------------------------------------------------------------------------------*/
+
+.mascarillas{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mascarillas .h2-mascarilla h2{
+    margin: 0 auto;
+}
+
+.mascarillas .mascarilla-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mascarillas .mascarilla-vista{
+    margin: 20px;
+    display:flex;
+    flex-direction: column;
+    border: yellow 5px dashed; 
+}
+
+/* css de contacto */
+
+.contacto form fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto form fieldset *{
+    margin: 10px;
+}
+
