@@ -110,64 +110,70 @@ footer a{
     border: 1px solid #1fd7e4;
     background-color: #0f0214;
 }
+
+
 /* css index ---------------------------------------------------------------------------------------------------------*/
-.index {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    width: 70%;
-    font-family: 'Inter', serif;
-}
 
-.index h1{
-    margin: 20px 0 20px  0;
-    padding: 10px 0 10px 0;
-    font-size: 50px;
-    color: #E2FF03;
-    background-color: #FF03EE;
-    border-radius: 40px;
-}
-
-.index .presen{
-    padding: 40px 0 40px 0;
-}
-.index p{
-    padding: 0 20px 20px 20px;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.index .NTD{
-    font-style: italic;
-    font-size: 45px;
-}
-
-.index p a{
-    text-decoration: underline;
-    color: black;
+@media (min-width: 920px){
+    .index {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 70%;
+        font-family: 'Inter', serif;
+    }
     
-}
-.index .ru-icono{
-    border-radius: 20px;
-}
-
-section{
-    border:10px #a01ad0 solid;
-    margin: 0 auto;
-    width: 80%;
-    display: block;
-    text-align: center;
-    margin-top: 50px;
-}
-
-section h4{
-    padding-bottom: 20px;
-    font-size: 35px;
-}
-section .panel-product img{
-    padding: 10px;
-    border-radius: 40px;
+    .index h1{
+        margin: 20px 0 20px  0;
+        padding: 10px 0 10px 0;
+        font-size: 50px;
+        color: #E2FF03;
+        background-color: #FF03EE;
+        border-radius: 40px;
+    }
+    
+    .index .presen{
+        padding: 40px 0 40px 0;
+    }
+    .index p{
+        padding: 0 20px 20px 20px;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .index .NTD{
+        font-style: italic;
+        font-size: 45px;
+    }
+    
+    .index p a{
+        text-decoration: underline;
+        color: black;
+        
+    }
+    .index .ru-icono{
+        border-radius: 20px;
+    }
+    
+    section{
+        border:10px #a01ad0 solid;
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    section h4{
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    section .panel-product img{
+        padding: 10px;
+        border-radius: 40px;
+    }
+    
 }
 
 
