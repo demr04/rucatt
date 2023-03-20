@@ -22,7 +22,7 @@ body{
 }
 
 header{
-    background: url(../medios/Header-ru.catt-4.jpg) no-repeat center;
+    background: url(../media/Header-ru.catt-4.jpg) no-repeat center;
     background-size: cover;
     height: 200px;
     overflow:hidden;   
@@ -78,7 +78,7 @@ nav #contacto{
 nav .buy-car{
     width: 50px;
     height: 50px;
-    background: url(../medios/carrito-icon-blanco.png);
+    background: url(../media/carrito-icon-blanco.png);
     background-size: contain;
 }
 
@@ -102,7 +102,7 @@ footer a{
     height: 29px;
     margin-left: 20px;
     margin-right: 20px;
-    background-image: url(../medios/instagram-icon.png);
+    background-image: url(../media/instagram-icon.png);
     background-size: contain;
 }
 
