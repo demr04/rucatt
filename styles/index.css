@@ -6,28 +6,25 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    background-color: black;
-}
+/* body-section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 body{
-
-    margin: 0px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 70%;
     color: #f0e0ec;
 }
+
+/* header-section -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 header{
     background: url(../media/Header-ru.catt-4.jpg) no-repeat center;
     background-size: cover;
     height: 200px;
     overflow:hidden;   
-    border: 1px solid rgb(223, 35, 160);
 }
+
+/* navbar-section -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 nav {
     height: 80px;
@@ -35,6 +32,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px 5px 20px;
+    background-color: black;
+    border-top: 1px solid rgb(223, 35, 160);
+    border-bottom: 1px solid rgb(223, 35, 160);
 }
 nav img{
     height: 90%;
@@ -78,16 +78,22 @@ nav #contacto{
 nav .buy-car{
     width: 50px;
     height: 50px;
-    background: url(../media/carrito-icon-blanco.png);
+    background: url(../media/carrito-icon-blanco.png) no-repeat center;
     background-size: contain;
 }
+
+nav #dropdown-navbar{
+    display: hidden
+}
+
+/* footer-section --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
     display: flex;
     height: 50px;
     margin-top: 100px;
     justify-content: right;
-    background-color: black;
+    background-color: #fcacd1;
     align-items: center;
 }
 
@@ -106,75 +112,66 @@ footer a{
     background-size: contain;
 }
 
-.container{
-    border: 1px solid #1fd7e4;
-    background-color: #0f0214;
+/* css index -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.index {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 70%;
+    font-family: 'Inter', serif;
 }
 
+.index h1{
+    margin: 20px 0 20px  0;
+    padding: 10px 0 10px 0;
+    font-size: 50px;
+    color: #E2FF03;
+    background-color: #FF03EE;
+    border-radius: 40px;
+}
 
-/* css index ---------------------------------------------------------------------------------------------------------*/
+.index .presen{
+    padding: 40px 0 40px 0;
+}
+.index p{
+    padding: 0 20px 20px 20px;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
 
-@media (min-width: 920px){
-    .index {
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-        width: 70%;
-        font-family: 'Inter', serif;
-    }
-    
-    .index h1{
-        margin: 20px 0 20px  0;
-        padding: 10px 0 10px 0;
-        font-size: 50px;
-        color: #E2FF03;
-        background-color: #FF03EE;
-        border-radius: 40px;
-    }
-    
-    .index .presen{
-        padding: 40px 0 40px 0;
-    }
-    .index p{
-        padding: 0 20px 20px 20px;
-        font-size: 25px;
-        font-weight: 900;
-        text-align: center;
-    }
-    
-    .index .NTD{
-        font-style: italic;
-        font-size: 45px;
-    }
-    
-    .index p a{
-        text-decoration: underline;
-        color: black;
-        
-    }
-    .index .ru-icono{
-        border-radius: 20px;
-    }
-    
-    section{
-        border:10px #a01ad0 solid;
-        margin: 0 auto;
-        width: 80%;
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-    }
-    
-    section h4{
-        padding-bottom: 20px;
-        font-size: 35px;
-    }
-    section .panel-product img{
-        padding: 10px;
-        border-radius: 40px;
-    }
+.index .NTD{
+    font-style: italic;
+    font-size: 45px;
+}
+
+.index p a{
+    text-decoration: underline;
+    color: black;
     
 }
+.index .ru-icono{
+    border-radius: 20px;
+}
+
+section{
+    border:10px #a01ad0 solid;
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+section h4{
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+section .panel-product img{
+    padding: 10px;
+    border-radius: 40px;
+}
+
 
 
 /* css product ----------------------------------------------------------------------------------------------------------*/
