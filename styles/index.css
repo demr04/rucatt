@@ -12,7 +12,9 @@
 /* body-section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 body{
-    color: #f0e0ec;
+    background-color: #0f0214;
+    color: #fcacd1;
+
 }
 
 /* header-section -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -114,14 +116,16 @@ footer a{
 
 /* css index -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .index {
-    margin: 0 auto;
-    display: block;
     text-align: center;
-    width: 70%;
     font-family: 'Inter', serif;
+    display: grid;
+    grid-template-areas: 
+    'welcome present present'
+    'section section section';
 }
 
 .index h1{
+    display: grid;
     margin: 20px 0 20px  0;
     padding: 10px 0 10px 0;
     font-size: 50px;
@@ -131,6 +135,7 @@ footer a{
 }
 
 .index .presen{
+    display: grid;
     padding: 40px 0 40px 0;
 }
 .index p{
@@ -154,7 +159,8 @@ footer a{
     border-radius: 20px;
 }
 
-section{
+.index section{
+    display: grid;
     border:10px #a01ad0 solid;
     margin: 0 auto;
     width: 80%;
