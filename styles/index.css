@@ -9,39 +9,77 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 /* body-section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 body{
-    background-color: #0f0214;
     color: #fcacd1;
+    min-height: 100vh;
+    background: url(../media/background_body.png) center;
+    background-size: cover;
+
 
 }
 
 /* header-section -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-header{
-    background: url(../media/Header-ru.catt-4.jpg) no-repeat center;
-    background-size: cover;
-    height: 200px;
-    overflow:hidden;   
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
-/* navbar-section -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+header .banner{
+    background: url(../media/Header-ru.catt-4.jpg) no-repeat center;
+    background-size: cover;
+    height: 7rem;
+    overflow: hidden;
+    width: 100%;
+    grid-area: banner;
+}
 
-nav {
-    height: 80px;
+header .container-nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px 5px 20px;
+    width: 100%;
+    padding: 1rem;
     background-color: black;
     border-top: 1px solid rgb(223, 35, 160);
     border-bottom: 1px solid rgb(223, 35, 160);
 }
-nav img{
-    height: 90%;
+
+header .container-nav img{
+    height: 3.5rem;
     border-radius: 20px;
 }
+
+header .container-nav nav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    align-self: center;
+    padding: 5px 20px 5px 20px;
+    
+}
+
+header .container-nav .buy-car{
+    position: relative;
+    float: left;
+    align-self: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: url(../media/carrito-icon-blanco.png) no-repeat center;
+    background-size: contain;
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -53,8 +91,8 @@ nav ul li a{
     font-family: 'Poppins', serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
-    padding-right: 20px;
+    font-size: 1.2rem;
+    padding-right: 1.2rem;
 }
 
 nav #home{
@@ -77,37 +115,27 @@ nav #contacto{
     color: #ee3189;
 }
 
-nav .buy-car{
-    width: 50px;
-    height: 50px;
-    background: url(../media/carrito-icon-blanco.png) no-repeat center;
-    background-size: contain;
-}
 
-nav #dropdown-navbar{
-    display: hidden
-}
 
 /* footer-section --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer{
     display: flex;
-    height: 50px;
-    margin-top: 100px;
+    height: 4rem;
     justify-content: right;
-    background-color: #fcacd1;
+    background-color: #ee3189;
     align-items: center;
 }
 
 
 footer h2{
-    font-size: 15px;
-    color: yellow;
+    font-size: 1rem;
+    color: rgb(8, 70, 59);
 }
 
 footer a{
-    width: 29px;
-    height: 29px;
+    width: 2rem;
+    height: 2rem;
     margin-left: 20px;
     margin-right: 20px;
     background-image: url(../media/instagram-icon.png);
@@ -115,44 +143,62 @@ footer a{
 }
 
 /* css index -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .index {
+    margin: 20px 5% 0 5%;
     text-align: center;
     font-family: 'Inter', serif;
     display: grid;
     grid-template-areas: 
-    'welcome present present'
-    'section section section';
+    'h1 h1 h1  present present present present'
+    'span span img present present present present'
+    'section section section section section section section';
+
+    grid-template-rows: 7rem 50rem 100rem;
+}
+
+
+.index img{
+    grid-area: img;
+    width: 50rem;
+}
+
+.index .container_1{
+    background-color: #FF03EE;
+    border-radius: 40px;
+    height: 100%;
+    grid-area: h1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .index h1{
-    display: grid;
-    margin: 20px 0 20px  0;
-    padding: 10px 0 10px 0;
-    font-size: 50px;
+    font-size: 2em;
     color: #E2FF03;
-    background-color: #FF03EE;
-    border-radius: 40px;
+    
 }
 
 .index .presen{
-    display: grid;
+    grid-area: present;
     padding: 40px 0 40px 0;
 }
 .index p{
-    padding: 0 20px 20px 20px;
-    font-size: 25px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
     text-align: center;
 }
 
 .index .NTD{
     font-style: italic;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
 .index p a{
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    color: #FF03EE;
     
 }
 .index .ru-icono{
@@ -160,11 +206,8 @@ footer a{
 }
 
 .index section{
-    display: grid;
+    grid-area: section;
     border:10px #a01ad0 solid;
-    margin: 0 auto;
-    width: 80%;
-    display: block;
     text-align: center;
     margin-top: 50px;
 }
