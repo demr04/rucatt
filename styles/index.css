@@ -50,71 +50,77 @@ header .banner{
 header .container-nav{
     display: flex;
     width: 100%;
-    padding: 1rem;
+    justify-content: space-between;
     background-color: black;
     border-top: 1px solid rgb(223, 35, 160);
     border-bottom: 1px solid rgb(223, 35, 160);
 }
 
-header .container-nav img{
+header .container-nav .ru-logo{
     height: 3.5rem;
     border-radius: 20px;
+    margin: 0.5rem 0 0.5rem 2rem;
+
 }
 
 header .container-nav nav {
     display: flex;
-    position: relative;
     align-items: center;
-    align-self: center;
-    padding: 5px 20px 5px 20px;
     
 }
 
-header .container-nav .buy-car{
-    position: relative;
-    float: left;
+header .container-nav label{
     align-self: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    background: url(../media/carrito-icon-blanco.png) no-repeat center;
-    background-size: contain;
+    font-size: 2rem;
 }
 
-nav ul{
+header .container-nav a{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-nav .buy-car{
+    display: flex;
+    align-self: center;
+    height: 4.5rem;
+    padding-right: 2rem;
+}
+
+header nav ul{
     display: flex;
     list-style: none;
     text-decoration: none;
 }
 
-nav ul li a{
+header nav ul li a{
+    display: block;
     text-decoration: none;
-    font-family: 'Poppins', serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-right: 1.2rem;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
-nav #home{
-    color: yellow;
+header nav ul li a:hover {
+    background: pink;
+
 }
 
-nav #productos{
-    color: #78e3eb;
+header .container-nav .buy-car:hover{
+    background: pink;
 }
 
-nav #disenos{
-    color: #a2e20c;
+header nav ul li a img{
+    display: flex;
+    align-self: center;
+    height: 4.5rem;
 }
 
-nav #historia{
-    color: #fcacd1;
-}
+@media (max-width:1024px){
+    header{
+        /* padding: 20px; */
 
-nav #contacto{
-    color: #ee3189;
+    }
 }
-
 
 
 /* footer-section --------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
